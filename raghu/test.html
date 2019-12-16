@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script type="text/javascript">
+        function setUrl(url, target) {
+            clearTimeout(window.ht);
+            window.ht = setTimeout(function () {
+                var div = document.getElementById(target);
+                div.innerHTML = '<iframe style="width:100%;height:100%;" frameborder="1" src="' + url + '" />';
+            }, 20); 
+        }  
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <a href="#" onclick="setUrl('http://www.aspforums.net','div1')">Aspforums</a>
+        <br />
+        <a href="#" onclick="setUrl('http://www.aspsnippets.com','div1')">AspSnippets</a>
+        <br />
+        <br />
+        <br />
+        <div>
+            <div id="div1" style="width: 500px; height: 300px; border: 1px solid #ddd;">
+            </div>
+        </div>
+    </div>
+    </form>
+
+
+<div class="box transform">
+</div>
+<style>
+.box {
+  background-color: #218D9B;
+  height: 100px;
+  width: 100px;
+}
+
+.transform {
+  -webkit-transition: all 10s ease;  
+  -moz-transition: all 10s ease;  
+  -o-transition: all 10s ease;  
+  -ms-transition: all 10s ease;  
+  transition: all 1s ease;
+}
+
+.transform-active {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+}</style>
+<script > 
+$("#button").click(function() {
+  $('.transform').toggleClass('transform-active');
+});
+</script>
+<input type="button" id="button" value="Click Me"></input>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({left: '250px'});
+  });
+});
+</script> 
+</head>
+<body>
+
+<button>Start Animation</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>
+</body>
+</html>

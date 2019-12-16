@@ -1,0 +1,24 @@
+<?php
+include_once 'dbh.inc.php';
+?>
+<html>
+<head>
+<title>dbh</title> 
+</head>
+<body>
+<?php
+$sql = "SELECT * FROM emp;";
+$result = mysqli_query($connec,$sql);
+$check = mysqli_num_rows($result);
+if($check>0)
+{
+while($row = mysqli_fetch_assoc($result))
+{echo $row['em'];
+}
+}
+else{echo "error occured";}
+
+?>
+
+</body>
+</html>

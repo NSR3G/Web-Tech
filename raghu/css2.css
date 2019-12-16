@@ -1,0 +1,97 @@
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] ,input[type=Mobile],input[type=email],input[type=date]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color:lightgreen;
+  border-radius:30px;
+  border:outset;
+  border-color:lightblue;
+  color: white;
+  padding: 14px 10px;
+  margin: 2px 0;
+  cursor: pointer;
+  width: 100%;
+  font-style:italic;
+font-family: "Comic Sans MS";
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+  color: maroon;
+  background-image:img_avatar2.png;
+}
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: 40%;
+  padding: 14px 20px;
+  background-color: maroon;
+}
+
+
+
+/* Avatar image */
+.avatar {
+  width: 30%;
+  border-radius: 50%;
+ 
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+  span.psw {
+    display: block;
+    float: none;
+  }  
+  .cancelbtn {
+    width: 100%;
+  }
+/* header part style */
+.Cname{display:inline-block;}
+.header{background-color:whitesmoke;
+		border:outset;
+		border-radius:10px;
+		border-top-color:purple;
+		border-left-color:white;font-style:italic;
+	font-family: "Comic Sans MS";
+		}
+.Lname{border:inset;
+		border-radius:20px;
+		background-color:yellow;
+		border-color:yellow;
+		color:purple;
+		font-style:italic;
+		font-family: "Comic Sans MS";
+			}
+
+.bar{border:inset;
+background-color:white;
+border-radius:20px;
+	
+}
+body{font-style:italic;
+	font-family: "Comic Sans MS";
+}
