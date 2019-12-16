@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style type = "text/css">
+  
+    .spacing
+    {
+        margin-left: 350px;
+        margin-bottom: 50px;
+        margin-top:30px
+    }
+
+    .carousel slide {
+
+        width:100%;
+        height:100%;
+           
+        
+    }
+
+
+    .carousel
+    {
+
+        width:50%;
+        height:50%;
+
+        margin-top:30px;
+        margin-left: 300px;    
+    }
+
+    <!-- body {
+      background-image: url('newback5.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }  -->
+
+    .capt
+    {
+      font-family: fantasy;
+      color: black;
+      font-weight: bolder;
+      font-size: x-large;
+    }
+
+    .imgstyle
+    {
+      border-color: darkviolet;
+      border-width: 8px;
+      border-style: solid;
+    }
+
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: red;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    
+    #myBtn:hover {
+      background-color: #555;
+    }
+  
+  
+  
+  </style>
+</head>
+<body>
+
+    
+   <!-- <div style="background-image: url('newback5.jpg');"> -->
+        <div class="container">
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+               <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+            
+                    <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="cityf.jpg" class = "imgstyle" style="width:100%; height:100%" >
+                  </div>
+            
+                  <div class="item">
+                    <img src="citys.jpg" class = "imgstyle" style="width:100%; height:100%" >
+                  </div>
+                
+                  <div class="item">
+                    <img src="cityb.jpg" class = "imgstyle" style="width:100%; height:100%"  >
+                  </div>
+                </div>
+            
+                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+
+<div class="container">
+
+   
+<br><br><br><br>
+        <table class="table">
+                <caption class = "capt" > Vehicle Model and Price </caption>
+            
+            <tbody>
+             
+                  <tr class="info">
+                    <td> Model </td>
+                    <td> Honda City ZX </td>
+                  </tr>
+                  <tr class="success">
+                    <td> Price </td>
+                    <td> ₹ 3,21,000.00 </td>
+                  </tr>
+                  
+                   
+               <br><br>   
+            </tbody>
+          </table>
+
+
+          <br><br>
+
+          <a href = "buyfinal.html"><button type="button" class="btn btn-success btn-lg btn-block" style = "margin-bottom:50px;margin-top:30px;" id = "button" >TEST DRIVE NOW</button></a>
+  
+  
+  
+  <table class="table">
+        <caption class = "capt"> Engine and Transmission </caption>
+    
+    <tbody>
+     
+          <!-- <tr class="info">
+            <td> Engine </td>
+            <td> 2494cc, 4 Cylinders Inline, 4 Valves/Cylinder, DOHC</td>
+          </tr>
+          <tr class="success">
+            <td> Engine Type </td>
+            <td> 4 cylinder Inline diesel engine</td>
+          </tr>
+          <tr class="info">
+            <td> Fuel Type </td>
+            <td> Diesel </td>
+          </tr>
+          <tr class="success">
+            <td> Max Power (bhp@rpm) </td>
+            <td> 100 bhp @ 3600 rpm </td>
+          </tr>
+          <tr class="info">
+            <td> Max Torque (Nm@rpm) </td>
+            <td> 200 Nm @ 1400 rpm </td>
+          </tr>
+          <tr class="success">
+            <td> Mileage (ARAI) </td>
+            <td> 	12.99 kmpl </td>
+          </tr>
+          <tr class="info">
+            <td> Drivetrain </td>
+            <td> RWD </td>
+          </tr>
+          <tr class="success">
+            <td> Transmission </td>
+            <td> Manual - 5 Gears </td>
+         </tr> -->
+
+         <tr class="info">
+                <td> Engine </td>
+                <td> 1497cc, 4 Cylinders Inline, 2 Valves/Cylinder</td>
+              </tr>
+              <tr class="success">
+                    <td> Engine Type </td>
+                    <td> i-DSI </td>
+              </tr>
+              <tr class="info">
+                <td> Fuel Type </td>
+                <td> Petrol </td>
+              </tr>
+              <tr class="success">
+                <td> Max Power (bhp@rpm) </td>
+                <td> 78@5500 </td>
+              </tr>
+              <tr class="info">
+                <td> Max Torque (Nm@rpm) </td>
+                <td> 125@2700 </td>
+              </tr>
+              <tr class="success">
+                <td> Mileage (ARAI) </td>
+                <td> 	12.8 kmpl</td>
+              </tr>
+              <tr class="info">
+                <td> Transmission </td>
+                <td> Manual - 5 Gears </td>
+              </tr>
+              
+              
+           
+       <br><br>   
+    </tbody>
+  </table>
+
+  <table class="table">
+        <caption class = "capt"> Dimensions & Weight </caption>
+    
+    <tbody>
+     
+                  <!-- <tr class="danger">
+                    <td> Length </td>
+                    <td> 4585 mm </td>
+                  </tr>
+                  <tr class="warning">
+                    <td> Width </td>
+                    <td> 1760 mm </td>
+                  </tr>
+                  <tr class="danger">
+                    <td> Height </td>
+                    <td> 1760 mm </td>
+                  </tr>
+                  <tr class="warning">
+                    <td> Wheelbase </td>
+                    <td> 2750 mm </td>
+                  </tr>
+                  <tr class="danger">
+                    <td> Ground Clearance </td>
+                    <td> 176 mm </td>
+                  </tr>
+                  <tr class="warning">
+                    <td> Kerb Weight </td>
+                    <td> 1680 kg </td>
+                  </tr> -->
+
+                  <tr class="danger">
+                        <td> Length </td>
+                        <td> 4390 mm </td>
+                      </tr>
+                      <tr class="warning">
+                        <td> Width </td>
+                        <td> 1690 mm </td>
+                      </tr>
+                      <tr class="danger">
+                        <td> Height </td>
+                        <td> 1495 mm </td>
+                      </tr>
+                      <tr class="warning">
+                        <td> Wheelbase </td>
+                        <td> 2450 mm </td>
+                      </tr>
+                     
+           
+       <br><br>   
+    </tbody>
+  </table>
+
+  <table class="table">
+        <caption class = "capt"> Capacity </caption>
+    
+    <tbody>
+     
+                <!-- <tr class="info" >
+                    <td> Doors </td>
+                    <td> 5 Doors </td>
+                  </tr>
+                  <tr class="active">
+                    <td> Seating Capacity </td>
+                    <td> 7 persons </td>
+                  </tr>
+                  <tr class="info">
+                    <td> No of Seating Rows </td>
+                    <td> 3 Rows </td>
+                  </tr>
+                  <tr class="active">
+                    <td> Fuel Tank Capacity </td>
+                    <td> 55 litres </td>
+                  </tr> -->
+
+                  <tr class="info">
+                        <td> Doors </td>
+                        <td> 4 Doors </td>
+                      </tr>
+                      <tr class="active">
+                        <td> Seating Capacity </td>
+                        <td> 5 persons </td>
+                      </tr>
+                      <tr class="info">
+                        <td> Fuel Tank Capacity </td>
+                        <td> 42 litres </td>
+                      </tr>
+           
+       <br><br>   
+    </tbody>
+  </table>
+
+  <table class="table">
+        <caption class = "capt"> Suspensions, Brakes & Steering </caption>
+    
+    <tbody>
+     
+                  <!-- <tr class="success">
+                    <td> Suspension Front </td>
+                    <td> double wishbone front axle </td>
+                  </tr>
+                  <tr class="warning">
+                    <td> Suspension Rear </td>
+                    <td> four link with lateral rod </td>
+                  </tr>
+                  <tr class="success">
+                    <td> Front Brake Type </td>
+                    <td> Disc </td>
+                  </tr>
+                  <tr class="warning">
+                    <td> Rear Brake Type </td>
+                    <td> Drum </td>
+                  </tr>
+                  <tr class="success">
+                    <td> Minimum Turning Radius </td>
+                    <td> 5.4 metres </td>
+                  </tr>
+                  <tr class="warning">
+                    <td> Steering Type </td>
+                    <td> Power assisted (Electric) </td>
+                  </tr>
+                  <tr class="success">
+                    <td> Wheels </td>
+                    <td> Alloy Wheels </td>
+                  </tr>
+                  <tr class="warning">
+                    <td> Spare Wheel </td>
+                    <td> Alloy </td>
+                  </tr>
+                  <tr class="success">
+                    <td> Front Tyres	 </td>
+                    <td> 205 / 65 R15 </td>
+                  </tr>
+                  <tr class="warning">
+                    <td> Rear Tyres </td>
+                    <td> 205 / 65 R15 </td>
+                  </tr> -->
+
+                  <tr class="success">
+                        <td> Suspension Front </td>
+                        <td> McPherson Strut with Stabilizer, Coil Spring </td>
+                      </tr>
+                      <tr class="warning">
+                        <td> Suspension Rear </td>
+                        <td> H-Type Torsion Beam Suspension, Coil Spring </td>
+                      </tr>
+                      <tr class="success">
+                        <td> Front Brake Type </td>
+                        <td> Disc </td>
+                      </tr>
+                      <tr class="warning">
+                        <td> Rear Brake Type </td>
+                        <td> Drum </td>
+                      </tr>
+                      <tr class="success">
+                        <td> Minimum Turning Radius </td>
+                        <td> 4.9 metres </td>
+                      </tr>
+                      <tr class="warning">
+                        <td> Front Tyres	 </td>
+                        <td> 175 / 65 R14 </td>
+                      </tr>
+                  
+                  
+               <br><br>   
+                  
+           
+       <br><br>   
+    </tbody>
+  </table>
+
+  <table class="table">
+        <caption class = "capt"> Features </caption>
+    
+    <tbody>
+     
+           
+
+            <tr class="success"><td> Central Locking   </td></tr>  
+            <tr class="info"><td> Speed Sensing Door Lock </td></tr>
+            <tr class="danger"><td>  Child Safety Lock    </td></tr>  
+            <tr class="warning"><td>  Air Conditioner  </td></tr>  
+            <tr class="active"><td> Seat Upholstery (Fabric) </td></tr>  
+            <tr class="success"><td> Power Windows (Front only) </td></tr>  
+            <tr class="info"><td> Rear Defogger </td></tr>  
+			<tr class="danger"><td> CD Player </td></tr>  
+			<tr class="warning"><td> AM/FM Radio</td></tr>  
+			
+                  
+                  
+               <br><br>   
+                  
+           
+       <br><br>   
+    </tbody>
+  </table>
+
+  
+  <a href = "buy2.html"><button type="button" class="btn btn-danger btn-lg spacing">BACK</button></a>
+  <a href = "../users/welcome.php"><button type="button" class="btn btn-primary btn-lg spacing">HOMEPAGE</button></a>
+ 
+
+
+
+</div>
+
+<script>
+  
+ 
+var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+  </script>
+
+</body>
+</html>
+

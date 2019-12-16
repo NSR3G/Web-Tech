@@ -1,0 +1,531 @@
+<html>
+	<head>
+		
+		<script type = "text/javascript" src = "jquery-3.4.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="css1.css">
+		<link rel="stylesheet" type="text/css" href="css2.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<style type = "text/css">
+		
+			#f1 {
+			
+				font-family: Times New Roman;
+				font-size: 30px;
+				padding: 15px 15px 15px 70px;
+				position:relative;
+				top:30px;
+			}
+			
+			.servicechoice {
+				
+				position: relative;
+				top: 5px;
+				
+			}
+			
+			.se {
+			
+				background-color: yellow;
+				border-color: orange;
+				border-style: ridge;
+				margin-left: 40px;
+				font-family: italic;
+				font-size: 20px;
+				font-family: Impact;
+				position:relative;
+				top:23px;
+				
+			
+			
+			}
+			
+			.normalb {
+			
+				background-color: green;
+				border-color: yellow;
+				border-style: ridge;
+				margin-left: 10px;
+				font-family: italic;
+				font-size: 20px;
+				font-family: Impact;
+				color: cyan;
+				
+			
+			
+			
+			
+			}
+			
+			#input {
+			
+				position:relative;
+				top:40px;
+				left: 40px;
+		
+			}
+			
+			.in1 {
+			
+				font-family: Wide Latin;
+				padding: 10px 5px 10px 5px;
+				font-size: 30px;
+				color: orangered;
+				font-weight: bolder;
+
+			
+			
+			}
+			
+			body {
+				background-image: url("hdback3.jpg");
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+				font-optical-sizing: 1;
+			  }  
+            
+           
+            .modal {
+            display: none;
+            position: fixed; 
+            z-index: 1; 
+            padding-top: 100px; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%;
+            overflow: auto; 
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            }
+
+        
+            .modal-content {
+                background-color: lightgoldenrodyellow;
+                margin: auto;
+                padding: 20px;
+                border: 6px solid burlywood;
+                width: 80%;
+                font-family: Stencil;
+            }
+
+           
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+                .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            
+
+			
+		</style>
+		
+	</head>
+	
+	<body bgcolor = "silver">
+
+			
+		
+		
+		<div class = "servicechoice">
+		
+			<button id = "ESa" class = "se">Engine service</button>
+			<button id = "BSa" class = "se">Brakes service</button>
+			<button id = "ESSa" class = "se">Electronics systems service</button>
+			<button id = "ISa" class = "se">Inspection service</button>
+			<button id = "TSa" class = "se">Tyre service</button>
+			<button id = "MSSa" class = "se">Mechanical systems service</button>
+			<button id = "ACSa" class = "se">AC service</button>
+		
+        </div>
+        
+        <div id="esaModal" class="modal">
+
+                
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>This service includes<br><br> 1. Oil and Filter Change<br> 2. Engine Diagnosis<br> 3. Diesel Service<br><br>Total Cost : ₹1500</p>
+                </div>
+              
+        </div>
+
+        <div id="bsaModal" class="modal">
+
+                
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>This service includes<br><br> 1. Repair and maintenance<br> 2. Diagnosis vehicle safety systems<br><br>Total Cost : ₹900</p>
+                </div>
+              
+        </div>
+
+        <div id="essaModal" class="modal">
+
+               
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>This service includes<br><br> 1. Battery Service<br> 2. Electronic Diagnosis<br><br>Total Cost : ₹1200</p>
+                </div>
+              
+        </div>
+
+        <div id="isaModal" class="modal">
+
+               
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>This service includes<br><br> 1. Emission Testing and Certification<br> 2. Inspection<br> 3. Holiday Check<br> 4. 20-points Check<br><br>Total Cost : ₹1700</p>
+                </div>
+              
+        </div>
+
+        <div id="tsaModal" class="modal">
+
+               
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>This service includes<br><br> 1. Cleaning, storage and tyre change<br> 2. Wheel rotation, balancing and alignment<br> 3. Tyre pressure service and maintenance<br><br>Total Cost : ₹1000</p>
+                </div>
+              
+        </div>
+
+        <div id="mssaModal" class="modal">
+
+                
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>This service includes rectyfiying problems involving<br> mechanical systems in your vehicle.<br><br>Total Cost : ₹1500</p>
+                </div>
+              
+        </div>
+
+        <div id="acsaModal" class="modal">
+
+               
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>This service includes<br><br> 1. System drainage and topping-up of refrigerant and compressor oil<br> 2. Leak test<br> 3. Pressure and functional test<br> 4. Cabin filter replacement<br><br>Total Cost : ₹1600</p>
+                </div>
+              
+        </div>
+	
+	<form>
+
+	
+		<p> 
+		
+			<span style="color: peachpuff; font-weight: bold;font-size:43.5px ;font-family: Copperplate Gothic;position:relative; top:37px; "> Choose your service </span> 
+			<br>
+		
+		</p>
+		
+		<div id = "input">
+		
+			<input id = "ES" class = 'checks' value = "Engine service" type = "checkbox" > <span class = "in1">Engine service</span> </input> <br>
+			<input id = "BS" class = 'checks' value = "Brakes service" type = "checkbox" > <span class = "in1">Brakes service</span> </input> <br>
+			<input id = "ESS" class = 'checks' value = "Electronics systems service" type = "checkbox" > <span class = "in1">Electronics systems service</span> </input> <br> 
+			<input id = "IS" class = 'checks' value = "Inspection service" type = "checkbox" > <span class = "in1">Inspection service</span> </input> <br>
+			<input id = "TS" class = 'checks' value = "Tyre service" type = "checkbox" > <span class = "in1">Tyre service</span> </input> <br>
+			<input id = "MSS" class = 'checks' value = "Mechanical systems service" type = "checkbox" > <span class = "in1">Mechanical systems service</span> </input> <br> 
+			<input id = "ACS" class = 'checks' value = "AC service" type = "checkbox" > <span class = "in1">AC service</span> </input> <br>
+		
+		
+		</div>
+		
+		<br><br>
+		<span style="color: peachpuff;font-weight: bold; font-size:43.5px ;font-family: Copperplate Gothic;position:relative; top:37px; "> Choose your car's make </span> 
+		<br><br><br><br>
+		
+			<div style = "padding-left:25px;">
+				<select id = "make" > 
+					
+					<option  value = "Honda"> <span class = "in1">Honda</span> </option>
+					<option  value = "MaSu"> <span class = "in1">Maruti Suzuki</span>  </option>
+					<option  value = "Toyota"> <span class = "in1">Toyota</span> </option>
+					<option  value = "Hyundai"> <span class = "in1">Hyundai</span> </option>
+					<option  value = "Tata"> <span class = "in1">Tata</span> </option>
+					<option  value = "Chevorlet"> <span class = "in1">Chevorlet</span> </option>
+					<option  value = "Nissan"> <span class = "in1">Nissan</span> </option>
+					<option  value = "Renault"> <span class = "in1">Renault</span> </option>
+					<option  value = "Mercedes"> <span class = "in1">Mercedes</span> </option>
+					<option  value = "BMW"> <span class = "in1">BMW</span> </option>
+				
+				</select>	
+				
+			</div>
+			
+		<span style="color: peachpuff;font-weight: bold; font-size:43.5px ;font-family: Copperplate Gothic;position:relative; top:37px; "> Choose your car's body style </span> 
+		<br><br><br><br>
+		
+			<div style = "padding-left:25px;">
+				
+				<select id = "bodystyle" >
+				
+					<option  value = "Hatch">  <span  class = "in1">Hatchback</span> </option>
+					<option  value = "Sedan">  <span class = "in1">Sedan</span> </option>
+					<option  value = "MPV">  <span class = "in1">Multi-purpose vehicle (MPV)</span> </option>
+					<option  value = "SUV">  <span class = "in1">Sports utility vehicle (SUV)</span> </option>
+					<option  value = "cross">  <span class = "in1">Crossover</span> </option>
+					<option  value = "Coupe"> <span class = "in1">Coupe</span> </option>
+					<option  value = "Conv">  <span class = "in1">Convertible</span> </option>
+				
+				</select>
+			
+	
+			</div>
+			
+			
+		
+		<span style="color: peachpuff;font-weight: bold; font-size:43.5px ;font-family: Copperplate Gothic;position:relative; top:37px; "> Type your car's model </span> 
+		<br><br><br><br><br>
+		
+		<textarea style = "margin-left : 10px;font-family: Copperplate Gothic" rows = 1 cols = 30 id = "carmodel" onfocus="fun_cm(this)" required></textarea>
+		<br>
+
+		<span style="color: peachpuff;font-weight: bold; font-size:43.5px ;font-family: Copperplate Gothic;position:relative; top:37px; " > Type the year of manufacture or model number </span> 
+		<br><br><br><br><br>
+		
+		<textarea style = "margin-left : 10px;font-family: Copperplate Gothic" rows = 1 cols = 40 id = "ymmn" onfocus="fun_ym(this)"  required></textarea>
+		
+		
+		
+		<br><br><br><br>
+			
+		<button class = "normalb" type = "button" onclick = "calc();" >Estimate my Bill</button>
+		<br><br>
+		
+		<textarea style = "margin-left: 10px;font-family: Copperplate Gothic" rows = 7 cols = 50 id = "selectedservices" onfocus="fun_eb(this)" required></textarea>
+			  
+		<br><br>
+		
+		
+        <a href = "service1.html"><button type = "button" class = "normalb">Back</button></a>
+        <button type = "submit" class = "normalb" id = "submit" onclick = "alert('Click on the click here to proceed button to continue')" style="margin-left: 100px;">Submit</button>
+        <button type = "reset" class = "normalb" style="margin-left: 100px;">Reset</button>
+		
+    </form>
+	
+	<br><br>
+    <a href = "service3.htm"><button type = "button" class = "normalb">Click here to proceed</button></a>
+			
+		<script>
+		
+                
+
+                function fun_cm(x)
+                {
+                   document.getElementById("carmodel").value = "";
+                   x.style.background = "skyblue";
+                }
+
+                function fun_ym(x)
+                {
+                   document.getElementById("ymmn").value = "";
+                   x.style.background = "skyblue";
+                }
+
+                function fun_eb(x)
+                {
+                   document.getElementById("selectedservices").value = "";
+                   x.style.background = "skyblue";
+                }
+
+                
+
+                var modal1 = document.getElementById("esaModal");
+                var modal2 = document.getElementById("bsaModal");
+                var modal3 = document.getElementById("essaModal");
+                var modal4 = document.getElementById("isaModal");
+                var modal5 = document.getElementById("tsaModal");
+                var modal6 = document.getElementById("mssaModal");
+                var modal7 = document.getElementById("acsaModal");
+
+                var span1 = document.getElementsByClassName("close")[0];
+                var span2 = document.getElementsByClassName("close")[1];
+                var span3 = document.getElementsByClassName("close")[2];
+                var span4 = document.getElementsByClassName("close")[3];
+                var span5 = document.getElementsByClassName("close")[4];
+                var span6 = document.getElementsByClassName("close")[5];
+                var span7 = document.getElementsByClassName("close")[6];
+
+				$("#ESa").click(function()
+				{	
+				
+					modal1.style.display = "block";
+					//alert("This service includes<br> 1. Oil and Filter Change<br> 2. Engine Diagnosis<br> 3. Diesel Service<br>");
+				
+				
+				});
+				
+				$("#BSa").click(function()
+				{	
+                    modal2.style.display = "block";
+					//alert("This service includes<br> 1. Repair and maintenance<br> 2. Diagnosis vehicle safety systems<br>");
+				
+				
+				});
+				
+				$("#ESSa").click(function()
+				{	
+                    modal3.style.display = "block";
+					//alert("This service includes<br> 1. Battery Service<br> 2. Electronic Diagnosis<br>");
+				
+				
+				});
+				
+				$("#ISa").click(function()
+				{	
+                    modal4.style.display = "block";
+					//alert("This service includes<br> 1. Emission Testing and Certification<br> 2. Inspection<br> 3. Holiday Check<br> 4. 20-points Check<br>");
+				
+				
+				});
+				
+				$("#TSa").click(function()
+				{	
+                    modal5.style.display = "block";
+					//alert("This service includes<br> 1. Cleaning, storage and tyre change<br> 2. Wheel rotaion, balancing and alignment<br> 3. Tyre pressure service and maintenance<br>");
+				
+				
+				});
+				
+				$("#MSSa").click(function()
+				{	
+                    modal6.style.display = "block";
+					//alert("This service includes rectyfiying problems involving<br> mechanical systems in your vehicle.<br>");
+				
+				
+				});
+				
+				$("#ACSa").click(function()
+				{	
+                    modal7.style.display = "block";
+					//alert("This service includes<br> 1. System drainage and topping-up of refrigerant and compressor oil<br> 2. Leak test<br> 3. Pressure and functional test<br> 4. Cabin filter replacement<br>");
+				
+				
+				});
+
+                span1.onclick = function() {
+                    modal1.style.display = "none";
+                }
+
+                span2.onclick = function() {
+                    modal2.style.display = "none";
+                }
+
+                span3.onclick = function() {
+                    modal3.style.display = "none";
+                }
+
+                span4.onclick = function() {
+                    modal4.style.display = "none";
+                }
+
+                span5.onclick = function() {
+                    modal5.style.display = "none";
+                }
+
+                span6.onclick = function() {
+                    modal6.style.display = "none";
+                }
+
+                span7.onclick = function() {
+                    modal7.style.display = "none";
+                }
+
+                
+                
+
+				
+				
+				
+				function calc()
+				{
+					var checks = $(".checks");  //document.getElementsByClassName('checks');
+					var str = '';
+					var temp;
+					var j = 0;
+					var cost = 0;
+					
+					for(i=0;i<7;++i){
+					
+					
+						if(checks[i].checked === true) {
+							
+							temp = '';
+							++j;
+							str += j+". "; 
+							
+							temp = checks[i].value + " " + "\n";
+							
+							if(temp == 'Engine service')
+							{
+								cost += 1500;
+							}
+							else if(temp == 'Brakes service')
+							{
+								cost += 900;
+							}
+							else if(temp == 'Electronics systems service')
+							{
+								cost += 1200;
+							}
+							else if(temp == 'Inspection service')
+							{
+								cost += 1700;
+							}
+							else if(temp == 'Tyre service')
+							{
+								cost += 1000;
+							}
+							else if(temp == 'Mechanical systems service')
+							{
+								cost += 1500;
+							}
+							else
+							{
+								cost += 1600;
+							}
+							
+							
+							
+							str += temp;
+							$("#selectedservices").val(str); //document.getElementById("selectedservices").value = str;
+							
+						
+						}
+						
+						
+					
+					}
+					
+					str += "\n\n Estimated Total: ₹" + cost + " \n"
+					$('#selectedservices').val(str); //document.getElementById("selectedservices").value = str;
+					
+					
+				}
+				
+				
+		
+		
+		
+		
+		</script>
+
+		
+		
+		
+	
+	</body>
+	
+</html>
